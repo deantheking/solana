@@ -32,6 +32,7 @@ else
   CHANNEL_OR_TAG=$CHANNEL
 fi
 
+CHANNEL_OR_TAG=edge
 if [[ -z $CHANNEL_OR_TAG ]]; then
   echo +++ Unable to determine channel or tag to publish into, exiting.
   exit 0
