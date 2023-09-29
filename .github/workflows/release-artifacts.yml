@@ -48,7 +48,7 @@ jobs:
         shell: bash
         run: |
           choco install openssl
-          refreshenv
+          export OPENSSL_DIR="C:\Program Files\OpenSSL"
           choco install protoc
           export PROTOC="C:\ProgramData\chocolatey\lib\protoc\tools\bin\protoc.exe"
           source /tmp/env.sh
